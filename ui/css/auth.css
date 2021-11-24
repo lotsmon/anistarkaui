@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+body{
+    font-family: Rubik;
+    position: absolute;
+    min-width: 100%; min-height: 100%;
+    overflow: hidden;
+
+    background: url("../image/auth/back.png") no-repeat center center fixed;
+    background-size: cover;
+}
+box{
+    visibility: hidden;
+
+    position: absolute;
+    border-radius: 30px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+}
+.signin{
+    left: 50%;
+    top: 50%;
+    width: 1042px;
+    height: 478px;
+    margin-top: -239px;
+    margin-left: -521px;
+
+    background: url("../image/auth/auth.png") 0 0 no-repeat;
+}
+t2,
+t1{
+    position: absolute;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    text-justify: auto;
+    
+    color: #FCF3F9;;
+}
+.t1-sigin{
+    width: 296px;
+    height: 43px;
+    left: 642px;
+    top: 60px;
+}
+input{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    
+    position: absolute;
+    width: 386px;
+    height: 20px;
+    padding: 20px;
+
+    border-radius: 15px;
+    background: none;
+    border: none;
+    color: #FCF3F9;
+    outline: none;
+    transition: box-shadow .2s;
+}
+input:invalid{
+    box-shadow: 0 0 3pt 1pt #CA1D1D;
+}
+input:focus{
+    box-shadow: 0 0 3pt 1pt rebeccapurple;
+}
+.input-signin[type=text]{
+    left: 576px;
+    top: 133px;
+}
+.input-signin-p{
+    left: 576px;
+    top: 213px;
+    width: 356px;
+    padding-right: 50px;
+}
+button{
+    position: absolute;
+    
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+    outline: none;
+
+    color: #FCF3F9;
+}
+.button-primary{
+    border: none;
+    background: linear-gradient(120deg, #9100C4 10%, #00069D);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button-primary:hover{
+    background: linear-gradient(120deg, #00069D, #9100C4 90%);
+}
+.bt1{
+    width: 168px;
+    height: 50px;
+    left: 834px;
+    top: 348px;
+}
+.icon-primary{
+    width: 24px;
+    height: 24px;
+    left: 46px;
+    top: 13px;
+
+    background: url('../icon/signin.svg') 0 0 no-repeat;
+}
+.t1-b1{
+    margin-left: 31px;
+}
+.t1-b2{
+    margin-left: 26px;
+}
+.a-fagot{
+    position: absolute;
+    width: 113px;
+    height: 20px;
+    left: 889px;
+    top: 288px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    color: #9782A7;
+}
+.a-fagot:hover{ text-decoration: underline;}
+.button-secondary{
+    border: none;
+    background: url("../image/auth/bt-secondary/button0.svg") 0 0 no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button-secondary:hover{
+    background: url("../image/auth/bt-secondary/button1.svg") 0 0 no-repeat;
+    background-size: cover;
+}
+.icon-secondary{
+    left: 46px;
+    top: 13px;
+
+    background: url('../icon/signup.svg') 0 0 no-repeat;
+}
+.icon-error{
+    width: 24px;
+    height: 24px;
+    background: url('../icon/error.svg');
+}
+.error-box{
+    visibility:hidden;
+
+    position: absolute;
+    left: 576px;
+    top: 282px;
+
+    color: #CA1D1D;
+}
+.error-box.view{
+    visibility: visible;
+}
+.text-error{
+    position: absolute;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: left;
+
+    width: 250px;
+    height: 24px;
+    margin-left: 28px;
+    top: 5px;
+}
+.error-box-signup{
+    left: 40px;
+    top: 440px;
+}
+.bt2{
+    width: 214px;
+    height: 50px;
+    left: 576px;
+    top: 348px;
+}
+.icon-h-w{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+.icon-s-p{
+    left: 958px;
+    top: 231px;
+    background: url("../icon/eye.svg");
+}
+.icon-s-p.view{
+    background: url("../icon/eye-slashed.svg");
+}
+.signup{    
+    left: 50%;
+    top: 50%;
+    width: 507px;
+    height: 603px;
+    margin-top: -301px;
+    margin-left: -253px;
+
+    background: url("../image/auth/reg.png") 0 0 no-repeat;
+}
+.t1-signup{
+    width: 291px;
+    height: 43px;
+    left: 108px;
+    top: 61px;
+}
+.input-signup[type=email]{
+    left: 40px;
+    top: 133px;
+}
+.input-signup1{
+    left: 40px;
+    top: 213px;
+}
+.input-signup2{
+    left: 40px;
+    top: 293px;
+}
+.input-signup3{
+    left: 40px;
+    top: 373px;
+}
+.bt3{
+    width: 214px;
+    height: 50px;
+    left: 253px;
+    top: 482px;
+}
+.bt4{
+    min-width: 168px;
+    min-height: 50px;
+    left: 40px;
+    top: 483px;
+    background: url('../image/auth/bt-secondary/button2.svg') 0 0 no-repeat;
+}
+.bt4:hover{
+    background: url('../image/auth/bt-secondary/button3.svg') 0 0 no-repeat;
+}
+.nfreg{
+    left: 50%;
+    top: 50%;
+    width: 507px;
+    height: 603px;
+    margin-top: -301px;
+    margin-left: -253px;
+
+    background: url('../image/auth/info_reg.png');
+}
+.t2{
+    width: 219px;
+    height: 153px;
+    left: 144px;
+    top: 80px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.icon-back{
+    background: url("../icon/back_arrow.svg") 0 0 no-repeat;
+}
+.t2-gr{
+    width: 320px;
+    height: 50px;
+    left: 100px;
+    top: 81px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 41px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(120.08deg, #C63CF6 -2.61%, #3E45FF 98.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fagot{
+    left: 50%;
+    top: 50%;
+    width: 507px;
+    height: 466px;
+    margin-top: -253px;
+    margin-left: -233px;
+
+    background: url('../image/auth/svg/vosstanovlenie.svg') 0 0 no-repeat;
+}
+.t1-fagot{
+    width: 380px;
+    height: 59px;
+    left: 50%;
+    margin-left: -190px;
+    top: 52px;
+}
+.input-fagot[type=email]{
+    left: 40px;
+    top: 204px;
+}
+.bt5{
+    width: 168px;
+    height: 50px;
+    left: 40px;
+    top: 337px;
+}
+.t2-fagot{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: start;
+
+    width: 391px;
+    height: 48px;
+    left: 40px;
+    top: 141px;
+}
+.t2-fagot2{
+    width: 427px;
+    height: 22px;
+    left: 40px;
+    top: 274px;
+    
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #A091AB;
+}
+.bt6{
+    left: 246px;
+    top: 336px;
+}
+.icon-bt{
+    background: url("../icon/arrow-counter.svg") 0 0 no-repeat;
+}
+.t2-fagot-nf{
+    width: 385px;
+    height: 153px;
+    left: 61px;
+    top: 40px;
+
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+}
+.t2-fagot-nf2{
+    width: 385px;
+    left: 61px;
+    top: 140px;
+
+    font-weight: 400;
+}
+.nffagot{
+    background: url("../image/auth/info_vost.png") 0 0 no-repeat;
+}
+.icon-s-p1{
+    top:310px;
+    left: 420px;
+}
+.icon-s-p2{
+    top:390px;
+    left: 420px;
+}

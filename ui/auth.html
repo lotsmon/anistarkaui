@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/auth.css">
+    <script type="text/javascript" src="./js/auth.js"></script>
+    <title>ANISTAR</title>
+</head>
+<body onload="return Loaded();">
+    <box id="signin-box" class="signin">
+        <t1 class="t1-sigin">Авторизация</t1>
+        <input id="signin-login" class="input-signin" type="text" placeholder="Логин">
+        <input id="signin-password" class="input-signin-p" type="password" placeholder="Пароль">
+        <icon class="icon-h-w icon-s-p" onclick="return showPassword(this, document.getElementById('signin-password'));"></icon>
+        <a onmouseup="return toggleBox(3);" class="a-fagot">Я забыл пароль</a>
+        <error id="signin-error-box" class="error-box">
+            <icon class="icon-h-w icon-error"></icon>
+            <te id="signin-error-text" class="text-error">Неверный логин или пароль</te>
+        </error>
+        <button onclick="return tryLogin();" class="button-primary bt1">
+            <icon class="icon-primary icon-h-w"></icon>
+            <t1-bt class="t1-b1">Войти</t1-bt>
+        </button>
+        <button onclick="return toggleBox(1);" class="button-secondary bt2">
+            <icon class="icon-secondary icon-h-w"></icon>
+            <t1-bt class="t1-b1">Регистрация</t1-bt>
+        </button>
+    </box>
+    <box id="signup-box" class="signup">
+        <t1 class="t1-signup">Регистрация</t1>
+        <input maxlength="64" id="signup-email" type="email" class="input-signup" placeholder="Email">
+        <input maxlength="32" minlength="4" id="signup-login" type="text" class="input-signup1" placeholder="Логин">
+        <input maxlength="48" minlength="6" id="signup-password" type="password" class="input-signup2" placeholder="Пароль">
+        <input maxlength="48" id="signup-vpassword" type="password" oninput="return getValidvPass(this);" class="input-signup3" placeholder="Повторите пароль">
+        <icon class="icon-h-w icon-s-p icon-s-p1" onclick="return showPassword(this, document.getElementById('signup-password'));"></icon>
+        <icon class="icon-h-w icon-s-p icon-s-p2" onclick="return showPassword(this, document.getElementById('signup-vpassword'));"></icon>
+        <error id="signup-error-box" class="error-box error-box-signup">
+            <icon class="icon-h-w icon-error"></icon>
+            <te id="signup-error-text" class="text-error">Неверный логин или пароль</te>
+        </error>
+        <button onclick="return tryRegistration();" class="button-primary bt3">
+            <icon class="icon-secondary icon-h-w"></icon>
+            <t1-bt class="t1-b1">Регистрация</t1-bt>
+        </button>
+        <button onclick="return toggleBox(0);" class="button-secondary bt4">
+            <icon class="icon-secondary icon-h-w icon-back"></icon>
+            <t1-bt class="t1-b2">Назад</t1-bt>
+        </button>
+    </box>
+    <box id="nfreg-box" class="nfreg">
+        <t2 class="t2-gr" id="nfreg-text">
+            Aboba,
+        </t2 >
+        <t2 class="t2" >аккаунт
+            успешно
+            зарегистрирован!</t2>
+    </box>
+    <box id="fagot-box" class="fagot">
+        <t1 class="t1-fagot">Восстановление</t1>
+        <t2 class="t2-fagot">Введите email  или логин, который указывали при регистрации</t2>
+        <input maxlength="64" id="fagot-email" class="input-fagot" placeholder="Email или логин" type="email">    
+        <t2 class="t2-fagot2">Письмо с восстановлением пароля придет на указанный email</t2>
+        <button onclick="return tryFagot();" class="button-primary bt3 bt6">
+            <icon class="icon-secondary icon-h-w icon-bt"></icon>
+            <t1-bt class="t1-b1">Восстановить</t1-bt>
+        </button>
+        <button onclick="return toggleBox(0);" class="button-secondary bt4 bt5">
+            <icon class="icon-secondary icon-h-w icon-back"></icon>
+            <t1-bt class="t1-b2">Назад</t1-bt>
+        </button>
+    </box>
+    <box id="nffagot-box" class="nfreg nffagot">
+        <t2 class="t2-fagot-nf" >Письмо с восстановлением
+            пароля выслано на</t2>
+            <t2 class="t2-gr t2-fagot-nf2" id="nffagot-text">
+                anistar@anistar.com
+            </t2 >
+    </box>
+</body>
+</html>
