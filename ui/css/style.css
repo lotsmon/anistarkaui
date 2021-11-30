@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.left{float: left;}
+.right{float: right;}
+.clearfix{clear: both;}

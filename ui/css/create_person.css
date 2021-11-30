@@ -1,0 +1,109 @@
+/* Мне впадлу все построчно комментировать, так что тут будет что-то по типу */
+/* *камень - ну это камень */
+
+/* backroud */
+body{
+    height: 100vh;
+
+    background-image: url(../icon/background_create_person.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+/* Кнопка назад и лого */
+header{
+    max-width: 1000px;
+
+    margin: 40px auto;
+}
+header .left{
+    position: relative;
+    top: 30px;
+}
+header .left a{
+    padding: 15px 45px;
+
+    border: 3px solid;
+    border-radius: 10px;
+    border-image: linear-gradient(122.38deg, #9100C4 6.31%, #00069D 98.26%);
+    border-image-slice: 1;
+
+}
+header .left a .img{
+    width: 20px;
+    height: 20px;
+
+    position: relative;
+    top: 3px;
+    left: -5px;
+
+    background-position: center;
+    background-size: 100%;
+    background-image: url(../icon/back.svg);
+    
+    display: inline-block;
+}
+
+header .right .anistar_logo{
+    width: 95px;
+    height: 89px;
+    
+    background-position: center;
+    background-size: 100%;
+    background-image: url(../icon/anistar_logo.svg);
+}
+
+.content{
+    max-width: 1000px;
+    
+    margin: 40px auto;
+}
+/* Кастомные радиобатоны */
+.content .left form .sex input[type=radio] {
+	display: none;
+}
+.content .left form .sex label{
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border-radius: 6px;
+	user-select: none;
+    background-color: rgba(189, 165, 208, 0.3);;
+}
+.sex > div{
+    display: inline-block;
+    text-align: center;
+}
+.sex .sex_male{
+    margin-right: 40px;
+}
+.sex label{
+    width: 84px;
+    height: 60px;
+    background-color: #5454;
+}
+.sex label .img{
+    width: 30px;
+    height: 60px;
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.sex .sex_male label.male .img{
+    background-image: url(../icon/male_radio.svg);
+}
+.sex .sex_female label.female .img{
+    background-image: url(../icon/female_radio.svg);
+}
+
+/* Замена при чеке */
+.content .left form .sex #male:checked + label.male .img {
+	background-image: url(../icon/male_radio_chek.svg);
+}
+.content .left form .sex #female:checked + label.female .img {
+    background-image: url(../icon/female_radio_chek.svg);
+}
+/*  */
