@@ -382,9 +382,15 @@ header .right .text a{
 .content .news .right{
     width: 1500px;
     vertical-align: top;
-    /* margin-bottom: 280px; */
 }
-.content .news .right .articles{font-size: 0;}
+.content .news .right .articles{
+    height: 530px;
+    width: 1500px;
+    white-space:nowrap;
+    font-size: 0;
+    overflow: auto;
+    overflow-x: hidden;
+}
 .content .news .right .articles>div{
     width: 675px;
     height: 150px;
@@ -398,9 +404,16 @@ header .right .text a{
 
     padding: 40px 30px;
 }
-.content .news .right .articles>div:nth-child(2n+2){
-    margin-right: 0;
+.content .news .right .articles>div:nth-child(4n+3){
+    position: relative;
+    top: 260px;
+    margin-left: -1530px;
 }
+.content .news .right .articles>div:nth-child(4n+4){
+    position: relative;
+    top: 260px;
+}
+
 .content .news .right .articles>div h3{
     font-size: 36px;
     font-weight: 500;
@@ -411,6 +424,8 @@ header .right .text a{
     font-weight: 500;
     color: #FCF3F9;
     margin-bottom: 30px;
+
+    white-space: normal;
 }
 .content .news .right .articles>div a{
     font-size: 14px;
@@ -424,6 +439,12 @@ header .right .text a{
     width: 166px;
     margin: 0 auto 88px;
 }
+.content .news .right .buttons>div{
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+}
+
 .content .news .right .buttons button{
     display: inline-block;
     border: 0;
@@ -446,7 +467,12 @@ header .right .text a{
     background-position: center;
     background-repeat: no-repeat;
 }
-
+#left_arr{
+    display: none;
+}
+#right_arr{
+    display: none;
+}
 .content .news .right .buttons .left_arr{float: left;}
 .content .news .right .buttons .left_arr .img{
     background-image: url(../img/left_arr.svg);
@@ -454,7 +480,6 @@ header .right .text a{
 .content .news .right .buttons .right_arr{float: right;}
 .content .news .right .buttons .right_arr .img{
     background-image: url(../img/right_arr.svg);
-
 }
 
 
